@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="Logo">
+        <hr>
+    </header>
+    <main>
+        <h1>Casdastro de Usuários</h1>
+        <form action="home.html" method="post">
+            <section>
+                <section>
+                    <div>
+                        <h4>Nome: </h4>
+                        <input type="text" placeholder="Ex.: Pedro Henrique Ribeiro Tavares" required size="40">
+                    </div>
+                    <div>
+                        <h4>E-mail: </h4>
+                        <input type="text" placeholder="Ex.: seuEmail@gmail.com" required size="40" minlength="11">
+                    </div>
+                    <div>
+                        <h4>Endereço: </h4>
+                        <input type="text" placeholder="Ex.: Rua Raul Rabelo, 443, Jardim São Bento" required size="40" minlength="11">
+                    </div>
+                    <div>
+                        <h4>Cidade: </h4>
+                        <input type="text" placeholder="Ex.: Poços de Caldas" required size="40" minlength="11">
+                    </div>
+                    <div>
+                        <h4>Qual seu Estado?</h4>
+                        <select name="Estado" id="">
+                            <option value="">Acre</option>
+                            <option value="">Alagoas</option>
+                            <option value="">Amapá</option>
+                            <option value="">Amazonas</option>
+                            <option value="">Bahia</option>
+                            <option value="">Ceará</option>
+                            <option value="">Distrito Federal</option>
+                            <option value="">Espirito Santo</option>
+                            <option value="">Goiás</option>
+                            <option value="">Maranhão</option>
+                            <option value="">Mato Grosso</option>
+                            <option value="">Mato Grosso do Sul</option>
+                            <option value="">Minas Gerais</option>
+                            <option value="">Pará</option>
+                            <option value="">Paraiba</option>
+                            <option value="">Paraná</option>
+                            <option value="">Pernambuco</option>
+                            <option value="">Piauí</option>
+                            <option value="">Rio de Janeiro</option>
+                            <option value="">Rio Grande do Norte</option>
+                            <option value="">Rio Grande do Sul</option>
+                            <option value="">Rondônia</option>
+                            <option value="">Roraima</option>
+                            <option value="">Santa Catarina</option>
+                            <option value="">São Paulo</option>
+                            <option value="">Sergipe</option>
+                            <option value="">Tocantins</option>
+                        </select>
+                    </div>
+                    
+                </section>
+                
+                <section>
+                    <h4>Qual seu Sexo?</h4>
+                    <div>
+                        <input type="radio" id="terror" name="sexo">
+                        <label for="terror">Homem</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="animacao" name="sexo">
+                        <label for="animacao">Mulher</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="nada" name="sexo" checked>
+                        <label for="nada">Não Definido</label>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <h4>De Quais Gêneros Você Mais Gosta? </h4>
+                        <div>
+                            <input type="checkbox" id="acao"><label for="acao">Ação</label>
+                        </div>
+                        <p><input type="checkbox" >Aventura</p>
+                        <p><input type="checkbox" >Comédia</p>
+                        <p><input type="checkbox" >Suspense</p>
+                        <p><input type="checkbox" >Drama</p>
+                        <p><input type="checkbox" >Romance</p>
+                        <p><input type="checkbox" >Terror</p>
+                        <p><input type="checkbox" >Animação</p>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <h4>Nome de Usuário</h4>
+                        <input type="text" placeholder="Ex.: PedroTavares06" required size="40" minlength="5">
+                    </div>
+                    <div>
+                        <h4>Senha</h4>
+                        <input type="password" placeholder="xxxxxxxxxxxx Min: 8 caracteres" required size="40" minlength="8">
+                    </div>
+                    <div>
+                        <h4>Confirmação da Senha</h4>
+                        <input type="password" placeholder="xxxxxxxxxxxx Min: 8 caracteres" required size="40" minlength="8">
+                    </div>
+                </section>
+                
+
+                
+                <button><a href="./index.html">Cancelar</a></button>
+                <input type="submit" value="Cadastrar" name="submit">
+                <input type="reset" value="Limpar">
+            </section>
+        </form>
+        
+    </main>
+</body>
+</html>

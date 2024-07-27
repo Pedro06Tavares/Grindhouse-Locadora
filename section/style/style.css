@@ -1,0 +1,12 @@
+
+body{
+    background-color: #1f1f1f;
+    color: aliceblue;
+}
+
+header{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
