@@ -1,3 +1,10 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
 
 body{
     background-color: #1f1f1f;
@@ -8,5 +15,46 @@ header{
     position: sticky;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #0A0A0A;
+    z-index: 20;
+    padding-bottom: -10000px;
+}
+
+.logo-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header #logoImage{
+    margin-bottom: -36px;
+    margin-right: 0.8rem;
+}
+
+nav ul{
+    list-style: none;
     justify-content: space-between;
+    display: flex;
+}
+
+.nav-item{
+margin: 1rem;
+text-decoration: none;
+font-size: larger;
+font-weight: bold;
+color: aliceblue;
+}
+
+.nav-item:hover{
+    color: #623370;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    margin-top: 5rem;
 }
