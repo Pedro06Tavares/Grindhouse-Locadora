@@ -6,48 +6,63 @@
 }
 
 
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
 body{
-    background-color: #1f1f1f;
-    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+    background-color:#FFFF;
+    color: #000000;
 }
 
 header{
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content:center;
     padding: 1rem;
-    background-color: #0A0A0A;
+    background-color: #000000;
     z-index: 20;
+    top: 0;
+    left: 0;
+    
+    position: sticky;
 }
 
 .logo-header{
     display: flex;
     align-items: center;
-    margin-top: -5rem;
 }
 
 .logo-header #logoImage{
-    margin-bottom: -10rem;
+    margin-bottom: -3rem;
 }
 
-
-main{
+.principal-ordem{
     display: flex;
-    margin-top: 2rem;
+
 }
 
 nav {
-    display: flex;
+    
+    display:flexbox;
     position: sticky;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #0A0A0A;
-    border-radius: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 1rem;
+    width: 100px;
+    border:1px solid #000000;
+    
+   
 }
 
 nav ul{
@@ -55,30 +70,27 @@ nav ul{
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: sticky;
+    left: 0;
+    top: 250px;
 }
+
 
 nav ul li{
     list-style-type: none;
     display: flex;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     margin-left: -2rem;
+    margin-right: 0.5rem;
+    font-size:17px;
 }
 
 
-.nav-item{
-text-decoration: none;
-font-size: larger;
-font-weight: bold;
-color: aliceblue;
-}
 
-.nav-item:hover{
-    color: #623370;
-}
-
-a{
-    text-decoration: none;
+main{
+    display: flex;
+    
+    border-radius: 2rem;
+    margin: 1rem;
 }
 
 #description{
@@ -86,10 +98,146 @@ a{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 4rem;
+    flex-direction: row;
+    margin: 5rem;
+    
 }
 
-#pDescription{
+#text-and-logo{
     display: flex;
-    text-align: right;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+    background-color: #C1121F;
+    border-radius: 1rem;
+}
+
+#text-and-logo img{
+    margin: 3rem;
+    margin-right: 5rem;
+}
+
+#description h1{
+    font-size: 8rem;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+}
+
+.destaque{
+    background-color: #C1121F;
+    width: 60rem;
+    height: 0.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#description section p{
+    font-size: large;
+    background-color: #C1121F;
+    padding: 2.2rem;
+    border-radius: 1rem;
+    color: aliceblue;
+
+}
+
+
+
+#dados{
+    display: flex;
     flex-wrap: wrap;
+    border:1px solid #C1121F;
+}
+
+#dados div{
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#alugue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:right ;
+}
+
+.btnRed{
+    padding: 1rem;
+    background-color:#FFFf;
+    border-radius: 0.4rem;
+    margin: 1rem;
+    border:1px solid #C1121F;
+    font-weight: bold;
+}
+
+.btnRed:hover{
+    background-color: #C1121F;
+    transition: 0.2s;
+    -webkit-transform: scale(2.2);
+    transform: scale(1.2);
+    
+}
+
+i:hover{
+    color: #C1121F;
+}
+
+.mudatmn{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .8s ease;
+
+}
+.mudatmn:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    padding-bottom: 2rem;
+    color: aliceblue;
+}
+
+footer a{
+    color: aliceblue;
+    text-align: left;
+}
+
+.link1:hover{
+    text-decoration:underline;
+}
+
+#programadores{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+    flex-direction: column;
+}
+
+#programadores p{
+    margin: 0.2rem;
+}
+
+#paginas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 3rem;
+}
+
+#paginas ul{
+    list-style: none;
+}
+
+#paginas ul li{
+    margin:0.2rem;
 }
