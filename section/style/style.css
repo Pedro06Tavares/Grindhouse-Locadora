@@ -15,31 +15,58 @@ header{
     position: sticky;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:center;
     padding: 1rem;
     background-color: #0A0A0A;
     z-index: 20;
-    padding-bottom: -10000px;
 }
 
 .logo-header{
     display: flex;
     align-items: center;
+    margin-top: -5rem;
 }
 
 .logo-header #logoImage{
-    margin-bottom: -36px;
-    margin-right: 0.8rem;
+    margin-bottom: -10rem;
+}
+
+
+main{
+    display: flex;
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0A0A0A;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
 }
 
 nav ul{
     list-style: none;
-    justify-content: space-between;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
+nav ul li{
+    list-style-type: none;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: -2rem;
+}
+
+
 .nav-item{
-margin: 1rem;
 text-decoration: none;
 font-size: larger;
 font-weight: bold;
@@ -54,7 +81,15 @@ a{
     text-decoration: none;
 }
 
-main{
+#description{
     display: flex;
-    margin-top: 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#pDescription{
+    display: flex;
+    text-align: right;
+    flex-wrap: wrap;
 }
