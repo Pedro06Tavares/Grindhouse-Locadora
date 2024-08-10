@@ -25,8 +25,9 @@ ul{
 body{
     display: flex;
     flex-direction: column;
-    background-color:#FADB9E;
-    color: #000000;
+    background-color: #131212;
+
+    color: #FFFf;
     gap: 2rem;
 }
 
@@ -281,6 +282,10 @@ main{
     
 }
 
+i{
+    color: #FDF0D5;
+}
+
 i:hover{
     color: #C1121F;
 }
@@ -363,34 +368,64 @@ i:hover{
     width: 255px;
     height: 333px;
     margin: 2rem;
+    border: 1px solid #FDF0D5;
+}
+
+.catalogo ul li img{
+    border:2px solid #FDF0D5;
 }
 
 .animacao{
-    background-color: rgb(55, 0, 255);
+    background-color: rgb(6, 4, 126);
 }
 
 .terror{
     background-color: #000000;
-    width: 500px;
 }
 
 .romance{
-    background-color: #EC323E;
+    background-color: rgb(241, 50, 82);
 }
+
+.comedia{
+    background-color: rgb(235, 66, 4);
+}
+
+.ficcao{
+    background-color: rgb(65, 7, 65);
+}
+
+.acao{
+    background-color: rgb(196, 14, 14);
+}
+
+.thriller{
+    background-color: rgb(3, 3, 36);
+}
+
 .rotate{
     transform: rotate(-90deg);
     font-size: 2rem;
     margin-right: -3.6rem;
 }
 
-.terror .rotate{
+.terror .rotate, .thriller .rotate, .acao .rotate{
     margin-right: -1rem;
     padding-top: 1rem;
     text-align: center;
 }
 
-.terror img , .romance img{
+.ficcao .rotate{
+    text-align: center;
+    margin-left: -3.5rem;
+}
+
+.terror img, .thriller img, .acao img {
     margin-right: -2rem;
+}
+
+.ficcao img{
+    margin-right: -5rem;
 }
 
 footer{
@@ -401,6 +436,8 @@ footer{
     background-color: #000000;
     padding-bottom: 2rem;
     color: aliceblue;
+    bottom: 0;
+    left: 0;
 }
 
 footer a{
