@@ -31,17 +31,19 @@ body{
     gap: 2rem;
 }
 
+
 header{
     display: flex;
     align-items: center;
     justify-content:center;
     padding: 1rem;
     z-index: 20;
+    
+    width: 100%;
 }
 
 
 header h1{
-    
     font-size: 1000%;
     font-weight: bolder;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -113,6 +115,7 @@ main{
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
+    z-index: 20;
 }
 
 
@@ -438,12 +441,31 @@ i:hover{
     margin-right: 7rem;
     gap: 2rem;
 }
+.filmes > img{
+    border:1px solid #FDF0D5;
+    /*box-shadow: 1px 1px 10px #EC323E;*/
+}
+.watchlist-button-red{
+    background-color: #131212 !important;
+    border:2px solid #C1121F;
+}
+
+.watchlist-button-red:hover{
+    background-color: #C1121F !important;
+    transition: 0.5s;
+    
+}
 
 .filmes-detalhes{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     text-align: justify;
+}
+
+.titulos-filmes-red{
+    font-size: 50px;
+    border-bottom:5px solid #C1121F;
 }
 
 .duracao-etc{
@@ -454,63 +476,132 @@ i:hover{
     flex-wrap: wrap;
 }
 
-.elenco{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 10rem;
-    margin-right: 10rem;
+.gen-animacao{
+    background-color: rgb(6, 4, 126);
+    color: #FDF0D5;
+    border-radius: 1rem;
+    font-weight: bold;
+    margin: 3px;
 }
+
+.gen-terror{
+    background-color: #000000;
+    color: #FDF0D5;
+    border-radius: 1rem;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.gen-slasher{
+    background-color: rgb(80, 3, 3);
+    color: #FDF0D5;
+    border-radius: 1rem;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.gen-terror:hover, .gen-slasher:hover, .gen-animacao:hover{
+    background-color: #EC323E;
+}
+
+
 
 .info-block{
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 17px;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin-bottom: 9px;
 }
 
 .redBlock{
-    width: 1.5rem;
-    height: 3rem;
+    width: 0.6rem;
+    height: 2rem;
     background-color: #C1121F;
     border-radius: 1rem;
 }
-.elenco-imgs{
-    display: flex;
-    flex-direction: row;
-    margin-left: -2rem;
-    flex-wrap: wrap;
-}
-
-.elenco-imgs li{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 2rem;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.elenco-imgs li div{
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
-
-.direcao{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-}
-
-
 
 #arredondamento{
     border-radius: 1rem;
     margin-top: 10px;
 }
+
+.diretor-elenco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.elenco{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.elenco div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.crew-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.filme-outros{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.venda-filmes-red{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.venda-filmes-red> a >button{
+    background-color: #C1121F;
+    font-weight: bolder;
+    font-size: 25px;
+    border-radius: 2rem;
+    color: #FDF0D5;
+
+}
+
+.trailers-red{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem;
+    gap: 5rem;
+    border:1px solid #C1121F;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.trailers-red > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
 
 footer{
     display: flex;
