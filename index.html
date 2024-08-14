@@ -3,36 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./section/style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
-    <header>
-        <img src="" alt="Logo">
-        <hr>
-    </header>
-
-    <main>
+    <nav>
+        <ul>
+            <li><a href="./home.html" class="mudatmnIcon"><i class="material-icons">home</i> </a></li>  
+            <li><a href="./catalogo.html" ><i class="material-icons">local_movies</i> </a></li>
+            <li><a href="./contato.html" ><i class="material-icons">local_phone</i></a> </li>
+            <li><a href="./sobre.html" ><i class="material-icons">group</i></a> </li>
+        </ul>
+    </nav>
+        <header>
+            <h1>GRINDHOUSE®</h1>
+        </header>
+        
+    <main> 
+        <div class="quadradoindex">
         <form action="home.html" method="post">
-            <section>
                 <div>
-                    <h2>Faça Seu Login para Prosseguir</h2>
-                    <h3>E-mail: </h3>
-                    <input name="email" placeholder="seuEmail@gmail.com" >
-                    <h3>Senha: </h3>
-                    <input type="password" name="senha" placeholder="xxxxxxxxxxxxx">
-                    <button>Entrar</button>
+                    <h2 style="margin-bottom: 20px;"> Bem-vindo ao Grindhouse®</h2>
+                    <h4 id="testetes">E-mail: </h4>
+                    <input name="email" placeholder="Email" class="campopreencher" >
+                    <h4 id="testetes">Senha: </h4>
+                    <input type="password" name="senha" placeholder="Senha" class="campopreencher">
+
+                </br><button id="botaobonito" class="link1">Entrar</button>
                 </div>
-        
-                <div>
-                    <a href="">Esqueci Minha Senha</a>
-                    <a href="./cadastro.html">Não Possuo Cadastro</a>
-                </div>
-            </section>
+                <p style="font-size: 11px; width: 300px; height:20px; margin:10px"> Ao continuar, você concorda com os 
+                    Termos de Serviço do Grindhouse® e a confirma que leu a nossa 
+                    Política de Privacidade. </p>
+                </br><hr>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPGQCsbLj4irleL5rWdVdQUabARVjkMI9a-JJEg5-t4UXdLhbIb5m_un3DNGK4PZjSCLw&usqp=CAU" id="textosenha" >Esqueceu sua senha?</a>
+                </br><a href="./cadastro.html" id="textosenha"> Não tem uma conta? Cadastre-se. </a>
+                
         </form>
-        
-        
-        <hr>
+    </div>
     </main>
+  
+    <footer>
     
+        <div id="programadores">
+            <h2>Grindhouse®</h2>
+            <p>por <a href="https://www.instagram.com/juliaffg_/" class="link1" target="_blank" >Julia Figueredo </a>e <a href=" https://www.instagram.com/pedro_hrtavares/" target="_blank" class="link1">Pedro Tavares</a></p>
+            <p>IFSULDEMINAS 2024</p>
+        </div>
+        <div>
+            <div id="paginas">
+                <div>
+                    <ul>
+                        <li><h5><a href="./contato.html" class="link1">Contato</a></h5></li>
+                        <li><h5><a href="./cadastro.html" class="link1">Cadastro</a></h5></li>
+                        <li><h5><a href="./sobre.html" class="link1">Sobre</a></h5></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><h5><a href="./catalogo.html" class="link1">Catálogo</a></h5></li>
+                        <li><h5><a href="./generos.html" class="link1">Gêneros</a></h5></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        
+        
+    </footer>
 </body>
 </html>

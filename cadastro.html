@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./section/style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Cadastro</title>
 </head>
 <body>
-    <header>
-        <img src="" alt="Logo">
-        <hr>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="./home.html" class="mudatmnIcon"><i class="material-icons">home</i> </a></li>  
+            <li><a href="./catalogo.html" ><i class="material-icons">local_movies</i> </a></li>
+            <li><a href="./contato.html" ><i class="material-icons">local_phone</i></a> </li>
+            <li><a href="./sobre.html" ><i class="material-icons">group</i></a> </li>
+        </ul>
+    </nav>
+        <header>
+            <h1>GRINDHOUSE®</h1>
+        </header>
     <main>
         <h1>Casdastro de Usuários</h1>
         <form action="home.html" method="post">
-            <section>
+                    <div class="quadradoindex" style="height: 32rem;"> 
                 <section>
                     <div>
-                        <h4>Nome: </h4>
-                        <input type="text" placeholder="Ex.: Pedro Henrique Ribeiro Tavares" required size="40">
+                        <h3 style="margin-bottom: 15px;"> Informações pessoais: </h3>
+                        <h4 id="testetes">Nome: </h4>
+                        <input type="text" placeholder="Nome Completo" class="campopreencher">
                     </div>
                     <div>
-                        <h4>E-mail: </h4>
-                        <input type="text" placeholder="Ex.: seuEmail@gmail.com" required size="40" minlength="11">
+                        <h4 id="testetes">E-mail: </h4>
+                        <input type="text" placeholder="Email" class="campopreencher">
                     </div>
                     <div>
-                        <h4>Endereço: </h4>
-                        <input type="text" placeholder="Ex.: Rua Raul Rabelo, 443, Jardim São Bento" required size="40" minlength="11">
+                        <h4 id="testetes">Endereço: </h4>
+                        <input type="text" placeholder="logradouro, n° e bairro " class="campopreencher">
                     </div>
                     <div>
-                        <h4>Cidade: </h4>
-                        <input type="text" placeholder="Ex.: Poços de Caldas" required size="40" minlength="11">
+                        <h4 id="testetes">Cidade: </h4>
+                        <input type="text" placeholder="Cidade" class="campopreencher">
                     </div>
                     <div>
-                        <h4>Qual seu Estado?</h4>
-                        <select name="Estado" id="">
+                        <h4 id="testetes">Qual seu Estado?</h4>
+                        <select name="Estado" placeholder="Cidade" class="campopreencher" >
+                            <option value="" disabled selected>Selecione o estado</option>
                             <option value="">Acre</option>
                             <option value="">Alagoas</option>
                             <option value="">Amapá</option>
@@ -63,64 +74,120 @@
                             <option value="">Tocantins</option>
                         </select>
                     </div>
+                
+                    <h4 id="testetes">Qual seu Sexo?</h4>
+                        <section id="testetes" style="margin-top: 10px;">
+                        <input type="radio" id="homem" name="sexo">
+                        <label for="homem">Homem</label>
                     
+                        <input type="radio" id="mulher" name="sexo">
+                        <label for="mulher">Mulher</label>
+                   
+                        <input type="radio" id="nada" name="sexo">
+                        <label for="nada"> Prefiro não dizer </label>
+                     </section>
                 </section>
-                
-                <section>
-                    <h4>Qual seu Sexo?</h4>
-                    <div>
-                        <input type="radio" id="terror" name="sexo">
-                        <label for="terror">Homem</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="animacao" name="sexo">
-                        <label for="animacao">Mulher</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="nada" name="sexo" checked>
-                        <label for="nada">Não Definido</label>
-                    </div>
-                </section>
+            </div>
 
+               <div class="quadradoindex" style="height:40px;">  
                 <section>
+                    <h3 style="margin-bottom: 10px;"> Informações de login: </h3>
                     <div>
-                        <h4>De Quais Gêneros Você Mais Gosta? </h4>
-                        <div>
-                            <input type="checkbox" id="acao"><label for="acao">Ação</label>
-                        </div>
-                        <p><input type="checkbox" >Aventura</p>
-                        <p><input type="checkbox" >Comédia</p>
-                        <p><input type="checkbox" >Suspense</p>
-                        <p><input type="checkbox" >Drama</p>
-                        <p><input type="checkbox" >Romance</p>
-                        <p><input type="checkbox" >Terror</p>
-                        <p><input type="checkbox" >Animação</p>
+                        <h4 id="testetes">Nome de Usuário:</h4>
+                        <input type="text" placeholder="Usuário" class="campopreencher">
+                    </div>
+                    <div>
+                        <h4 id="testetes">Senha:</h4>
+                        <input type="password" placeholder="Senha Min: 8 caracteres" class="campopreencher">
+                    </div>
+                    <div>
+                        <h4 id="testetes">Confirmação de Senha:</h4>
+                        <input type="password" placeholder="Confirmação de Senha" class="campopreencher">
                     </div>
                 </section>
+            </div>
+               
+               <div id="generos-favs"> 
+                    <h4 style="margin-bottom: 10px;">De Quais Gêneros Você Mais Gosta?</h4>
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                      <div class="cadastrogenero">
+                        <input type="checkbox" id="acao">
+                        <label for="acao" style="margin-left: 5px;">Ação</label>
+                      </div>
+                      <div class="cadastrogenero">
+                        <input type="checkbox" id="aventura">
+                        <label for="aventura" style="margin-left: 5px;">Aventura</label>
+                      </div>
+                      <div class="cadastrogenero">
+                        <input type="checkbox" id="comedia">
+                        <label for="comedia" style="margin-left: 5px;">Comédia</label>
+                      </div>
+                      <div class="cadastrogenero">
+                        <input type="checkbox" id="suspense">
+                        <label for="suspense" style="margin-left: 5px;">Suspense</label>
+                      </div>
+                      <div class="cadastrogenero">
+                        <input type="checkbox" id="drama">
+                        <label for="drama" style="margin-left: 5px;">Drama</label>
+                      </div>
+                      <div class="cadastrogenero">
+                        <input type="checkbox" id="romance">
+                        <label for="romance" style="margin-left: 5px;">Romance</label>
+                      </div>
+                      <div class="cadastrogenero">
+                        <input type="checkbox" id="terror">
+                        <label for="terror" style="margin-left: 5px;">Terror</label>
+                      </div>
+                      <div class="cadastrogenero">
+                        <input type="checkbox" id="animacao">
+                        <label for="animacao" style="margin-left: 5px;">Animação</label>
+                      </div>
+                    </div>
+                        
+                   </div>
+               
+              
 
-                <section>
-                    <div>
-                        <h4>Nome de Usuário</h4>
-                        <input type="text" placeholder="Ex.: PedroTavares06" required size="40" minlength="5">
-                    </div>
-                    <div>
-                        <h4>Senha</h4>
-                        <input type="password" placeholder="xxxxxxxxxxxx Min: 8 caracteres" required size="40" minlength="8">
-                    </div>
-                    <div>
-                        <h4>Confirmação da Senha</h4>
-                        <input type="password" placeholder="xxxxxxxxxxxx Min: 8 caracteres" required size="40" minlength="8">
-                    </div>
-                </section>
-                
-
-                
-                <button><a href="./index.html">Cancelar</a></button>
-                <input type="submit" value="Cadastrar" name="submit">
-                <input type="reset" value="Limpar">
-            </section>
+                <div class="botoescadastro">
+                     <a href="./index.html" > <button id="botaobonito"class="link1">Cancelar</button></a>
+               <input type="submit" value="Cadastrar" name="submit" id="botaobonito" class="link1" >
+            <input type="reset" value="Limpar" id="botaobonito" class="link1"> 
+        </div>
         </form>
         
     </main>
+
+
+    <footer>
+    
+        <div id="programadores">
+            <h2>Grindhouse®</h2>
+            <p>por <a href="https://www.instagram.com/juliaffg_/" class="link1" target="_blank" >Julia Figueredo </a>e <a href=" https://www.instagram.com/pedro_hrtavares/" target="_blank" class="link1">Pedro Tavares</a></p>
+            <p>IFSULDEMINAS 2024</p>
+        </div>
+        <div>
+            <div id="paginas">
+                <div>
+                    <ul>
+                        <li><h5><a href="./contato.html" class="link1">Contato</a></h5></li>
+                        <li><h5><a href="./cadastro.html" class="link1">Cadastro</a></h5></li>
+                        <li><h5><a href="./sobre.html" class="link1">Sobre</a></h5></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><h5><a href="./catalogo.html" class="link1">Catálogo</a></h5></li>
+                        <li><h5><a href="./generos.html" class="link1">Gêneros</a></h5></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        
+        
+    </footer>
+    
 </body>
 </html>
