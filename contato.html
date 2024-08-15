@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./section/style/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Cadastro</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <title>Contato</title>
 </head>
 <body>
     <header>
@@ -13,40 +14,42 @@
     </header>
     <nav>
         <ul>
-            <li><a href="./home.html" class="mudatmnIcon"><i class="material-icons">home</i> </a></li>
-            
-            <li><a href="./catalogo.html" ><i class="material-icons">local_movies</i> </a></li>
-            <li><a href="./contato.html" ><i class="material-icons">local_phone</i></a> </li>
-            <li><a href="./sobre.html" ><i class="material-icons">group</i></a> </li>
+            <li><a href="./home.html" class="mudatmnIcon"><i class="fi fi-sr-home"></i></a></li>
+            <li><a href="./catalogo.html" ><i class="fi fi-sr-camera-movie"></i></li>
+            <li><a href="./trailer.html" ><i class="fi fi-ss-film"></i></i></li>
+            <li><a href="./soundtrack.html" ><i class="fi fi-ss-record-vinyl"></i></li>
+            <li><a href="./contato.html" ><i class="fi fi-sr-envelope"></i></a> </li>
+            <li><a href="./sobre.html" ><i class="fi fi-sr-people-roof"></i></a> </li>
         </ul>
     </nav>
     <main>
-        <h1>Contato</h1>
+        <div class="quadradoindex" style="height:35rem; width:27rem;">
+        <h1 style="margin-bottom: 10px;">Contato</h1>
         <form action="home.html" method="post">
             <section>
                 <section>
                     <div>
-                        <h4>Nome: </h4>
-                        <input type="text" placeholder="" size="40">
+                        <h4 id="testetes">Nome: </h4>
+                        <input type="text" placeholder="" class="campopreencher">
                     </div>
                     <div>
-                        <h4>E-mail: </h4>
-                        <input type="text" placeholder="" size="40" >
+                        <h4 id="testetes">E-mail: </h4>
+                        <input type="text" placeholder="" class="campopreencher">
                     </div>
                     <div>
-                        <h4>Assunto: </h4>
-                        <input type="text" placeholder="" size="40" >
+                        <h4 id="testetes">Assunto: </h4>
+                        <input type="text" placeholder="" class="campopreencher" >
                     </div>
                     <div>
-                        <h4>Mensagem: </h4>
-                        <textarea name="" id="" cols="40"></textarea>
+                        <h4 id="testetes">Mensagem: </h4>
+                        <textarea name="" cols="40" class="campopreencher" style="height: 10rem;"></textarea>
                     </div>
                    
                 </section>
-                <input type="submit" value="Enviar E-mail" name="submit">
+                <input type="submit" value="Enviar" name="submit" id="botaobonito" class="link1">
             </section>
         </form>
-        
+        </div>
     </main>
     <footer>
     

@@ -63,11 +63,15 @@ nav {
 
 
 i{
-    color: #FDF0D5;
+    color: #C1121F;;
     font-size: 30px;
     padding: 10px;
+    padding-bottom: 5px;
     border-radius: 1rem;
     border:1px solid #FDF0D5;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDF0D5;
 }
 
 i:hover{
@@ -97,7 +101,7 @@ nav ul{
 
 nav ul li{
     list-style-type: none;
-    margin-left: -2rem;
+    margin-left: -5rem;
     margin-right: 0.5rem;
     font-size:17px;
     margin-top: 1rem;
@@ -314,8 +318,9 @@ main{
     gap: 0.5rem;
     color: aliceblue;
     border: 1px solid #000000;
-
+    font-size: 20px;
 }
+
 #alugue{
     display: flex;
     flex-direction: column;
@@ -404,20 +409,40 @@ main{
 
 .btnRed{
     padding: 5rem;
-    background-color: #131212;
+    background-color: #C1121F;
     color: #FDF0D5;
     border-radius: 0.4rem;
     margin: 1rem;
-    border:1px solid #C1121F;
     font-weight: bold;
     font-size: 200%;
 }
 
-.btnRed:hover{
-    background-color: #C1121F;
+.btnRed:hover, #blackBtn:hover{
+    background-color: #FDF0D5;
     transition: 0.5s;
+    color: #C1121F ;
     
 }
+
+#blackBtn{
+    width: 9em;
+    height: 5rem;
+    color: #FDF0D5;
+    background-color: #C1121F;
+    border-radius: 2rem;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid #FDF0D5;
+}
+
+#blackBtn:hover{
+    transition: 0.5s;
+    background-color: #FDF0D5;
+    color: #C1121F;
+    
+}
+
+
 
 
 .mudatmn{
@@ -434,7 +459,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 3rem;
     gap: 5rem;
     border:1px solid #000000;
     justify-content: center;
@@ -444,6 +469,11 @@ main{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 7px;
+    color:#000000;
+    
+}
+.sobre > img{
+    border-radius: 1rem;
 }
 
 .sobre div{
@@ -452,7 +482,7 @@ main{
     flex-wrap: wrap ;
     gap: 1rem;
     width: 500px;
-    height: 300px;
+    height: 250px;
 }
 
 .sobre div p{
@@ -467,10 +497,16 @@ main{
     margin-left: -2.4rem;
 }
 
-.sobre div ul li{
-    background-color: #C1121F;
-    padding: 1rem;
-    border-radius: 2rem;
+.sobre div ul a{
+    display: flex; 
+    align-items: center; 
+    text-decoration: none;
+}
+
+.sobre div ul a img{
+    width: 30px; 
+    height: 30px; 
+    margin-right: 5px;
 }
 
 #sobre-pedro h3, #sobre-pedro ul{
@@ -478,7 +514,6 @@ main{
     justify-content: right;
 
 }
-
 .catalogo{
     display: flex;
     flex-direction: row;
@@ -632,8 +667,6 @@ main{
     font-weight: bold;
     margin: 3px;
 }
-
-
 
 .gen-romance{
     background-color: #e83e55;
