@@ -371,7 +371,6 @@ main{
 
 .destaques-conteudo{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color: #C1121F;
     height: 300px;
@@ -637,37 +636,37 @@ main{
 }
 
 .titulos-filmes-red2{
-    font-size: 50px;
+    font-size: 400%;
     border-bottom:5px solid rgb(236, 93, 93);
 }
 
 .titulos-filmes-blue{
-    font-size: 50px;
+    font-size: 400%;
     border-bottom:5px solid rgb(107, 105, 238);
 }
 
 .titulos-filmes-orange{
-    font-size: 50px;
+    font-size: 400%;
     border-bottom:5px solid #ee7d57;
 }
 
 .titulos-filmes-purple{
-    font-size: 50px;
+    font-size: 400%;
     border-bottom:5px solid  #c538ca;
 }
 
 .titulos-filmes-pink{
-    font-size: 50px;
+    font-size: 400%;
     border-bottom:5px solid  #e83e55;
 }
 
 .titulos-filmes-black{
-    font-size: 50px;
+    font-size: 400%;
     border-bottom:5px solid  #696767;
 }
 
 .titulos-filmes-dark-blue{
-    font-size: 50px;
+    font-size: 400%;
     border-bottom:5px solid  rgb(3, 3, 194);
 }
 
@@ -753,6 +752,229 @@ main{
     background-color: #EC323E;
     transition: 0.4s;
 }
+
+#pagina-generos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.desc-gens{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+}
+
+#desc-gen-acao{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    gap:1rem;
+    background-repeat: none;
+    background-size:100%;
+    padding: 2rem;
+    background-color: #a3020d;
+    border: 1px solid #FDF0D5;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: #FDF0D5 !important;
+}
+
+#desc-gen-animacao{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    gap:1rem;
+    background-repeat: none;
+    background-size:100%;
+    padding: 2rem;
+    background-color: rgb(6, 4, 126);
+    border: 1px solid #FDF0D5;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: #FDF0D5 !important;
+}
+
+#desc-gen-comedia{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    gap:1rem;
+    background-repeat: none;
+    background-size:100%;
+    padding: 2rem;
+    background-color: #c93200;
+    border: 1px solid #FDF0D5;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: #FDF0D5 !important;
+}
+
+
+#desc-gen-fic{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 650px;
+    gap:1rem;
+    background-repeat: none;
+    background-size:100%;
+    padding: 2rem;
+    background-color: #3f0941;
+    border: 1px solid #FDF0D5;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: #FDF0D5 !important;
+}
+
+#desc-gen-romance{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    gap:1rem;
+    background-repeat: none;
+    background-size:100%;
+    padding: 2rem;
+    background-color: #a32435;
+    border: 1px solid #FDF0D5;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: #FDF0D5 !important;
+}
+
+
+#desc-gen-terror{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 570px;
+    gap:1rem;
+    background-repeat: none;
+    background-size:100%;
+    padding: 2rem;
+    background-color: #000000;
+    border: 1px solid #FDF0D5;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: #FDF0D5 !important;
+}
+
+#desc-gen-thriller{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 570px;
+    gap:1rem;
+    background-repeat: none;
+    background-size:100%;
+    padding: 2rem;
+    background-color: #050324;
+    border: 1px solid #FDF0D5;
+    border-radius: 2rem;
+    font-size: 20px;
+    color: #FDF0D5 !important;
+}
+
+
+.desc-gen-div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-size: 40px;
+}
+
+.name-gen-pg{
+    color: #FDF0D5 !important;
+}
+
+#a-thriller{
+    background-color: #1002d1;
+    color: #FDF0D5;
+    border: 1px solid #FDF0D5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#a-acao{
+    background-color: #ff0011;
+    color: #FDF0D5;
+    border: 1px solid #FDF0D5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#a-animacao{
+    background-color: rgb(59, 56, 231);
+    color: #FDF0D5;
+    border: 1px solid #FDF0D5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#a-comedia{
+    background-color:#ff4000;
+    color: #FDF0D5;
+    border: 1px solid #FDF0D5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#a-fic{
+    background-color:#bf05c5;
+    color: #FDF0D5;
+    border: 1px solid #FDF0D5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#a-romance{
+    background-color:#f0445b;
+    color: #FDF0D5;
+    border: 1px solid #FDF0D5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#a-terror{
+    background-color:#363636;
+    color: #FDF0D5;
+    border: 1px solid #FDF0D5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
 
 
 .info-block{
@@ -853,9 +1075,16 @@ main{
 }
 
 .chamativo{
-    font-size: 8rem;
+    font-size: 500%;
+    font-weight: bold;
     padding: 2rem;
-    text-align: center;
+    text-align: center !important;
+    /*background-color: #C1121F;
+    border-radius: 3rem;
+    border: 2px solid #FDF0D5;
+    width: 80%;
+    display: flex;*/
+    margin:2rem;
     
 }
 
