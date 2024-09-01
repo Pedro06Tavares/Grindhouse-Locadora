@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./section/style/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="./section/img/logos/grindhouseLogo.png">
+    <link rel="shortcut icon" href="./section/img/logos/logo-vermelha.png">
     <title>Cadastro</title>
 </head>
+
 <body>
     <header>
-    <img src="./section/img/logos/GRINDHOUSE.png" alt="" width="100%" >
-</header>
+        <img src="./section/img/logos/GRINDHOUSE.png" alt="" width="100%">
+    </header>
     <main>
         <h1>Casdastro de Usuários</h1>
         <form action="home.html" method="post">
-                    <div class="quadradoindex" style="height: 32rem;"> 
+            <div class="quadradoindex" style="height: 32rem;">
                 <section>
                     <div>
                         <h3 style="margin-bottom: 15px;"> Informações pessoais: </h3>
                         <h4 id="testetes">Nome: </h4>
-                        <input type="text" placeholder="Nome Completo" class="campopreencher">
+                        <input type="text" placeholder="Nome Completo" class="campopreencher" required>
                     </div>
                     <div>
                         <h4 id="testetes">E-mail: </h4>
-                        <input type="text" placeholder="Email" class="campopreencher">
+                        <input type="text" placeholder="Email" class="campopreencher" required>
                     </div>
                     <div>
                         <h4 id="testetes">Endereço: </h4>
-                        <input type="text" placeholder="logradouro, n° e bairro " class="campopreencher">
+                        <input type="text" placeholder="logradouro, n° e bairro " class="campopreencher" required>
                     </div>
                     <div>
                         <h4 id="testetes">Cidade: </h4>
-                        <input type="text" placeholder="Cidade" class="campopreencher">
+                        <input type="text" placeholder="Cidade" class="campopreencher" required>
                     </div>
                     <div>
                         <h4 id="testetes">Qual seu Estado?</h4>
-                        <select name="Estado" placeholder="Cidade" class="campopreencher" >
+                        <select name="Estado" placeholder="Cidade" class="campopreencher">
                             <option value="" disabled selected>Selecione o estado</option>
                             <option value="">Acre</option>
                             <option value="">Alagoas</option>
@@ -67,110 +69,120 @@
                             <option value="">Tocantins</option>
                         </select>
                     </div>
-                
+
                     <h4 id="testetes">Qual seu Sexo?</h4>
-                        <section id="testetes" style="margin-top: 10px;">
+                    <section id="testetes" style="margin-top: 10px;">
                         <input type="radio" id="homem" name="sexo">
                         <label for="homem">Homem</label>
-                    
+
                         <input type="radio" id="mulher" name="sexo">
                         <label for="mulher">Mulher</label>
-                   
+
                         <input type="radio" id="nada" name="sexo">
                         <label for="nada"> Prefiro não dizer </label>
-                     </section>
+                    </section>
                 </section>
             </div>
 
-               <div class="quadradoindex" style="height:40px;">  
+            <div class="quadradoindex" style="height:40px;">
                 <section>
                     <h3 style="margin-bottom: 10px;"> Informações de login: </h3>
                     <div>
                         <h4 id="testetes">Nome de Usuário:</h4>
-                        <input type="text" placeholder="Usuário" class="campopreencher">
+                        <input type="text" placeholder="Usuário" class="campopreencher" required>
                     </div>
                     <div>
                         <h4 id="testetes">Senha:</h4>
-                        <input type="password" placeholder="Senha Min: 8 caracteres" class="campopreencher">
+                        <input type="password" placeholder="Senha Min: 8 caracteres" class="campopreencher" required>
                     </div>
                     <div>
                         <h4 id="testetes">Confirmação de Senha:</h4>
-                        <input type="password" placeholder="Confirmação de Senha" class="campopreencher">
+                        <input type="password" placeholder="Confirmação de Senha" class="campopreencher" required>
                     </div>
                 </section>
             </div>
-               
-               <div id="generos-favs"> 
-                    <h4 style="margin-bottom: 10px;">De Quais Gêneros Você Mais Gosta?</h4>
-                    <div style="display: flex; flex-direction: column; gap: 5px;">
-                      <div class="cadastrogenero">
+
+            <div id="generos-favs">
+                <h4 style="margin-bottom: 10px;">De Quais Gêneros Você Mais Gosta?</h4>
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <div class="cadastrogenero">
                         <input type="checkbox" id="acao">
                         <label for="acao" style="margin-left: 5px;">Ação</label>
-                      </div>
-                      <div class="cadastrogenero">
+                    </div>
+                    <div class="cadastrogenero">
                         <input type="checkbox" id="aventura">
                         <label for="aventura" style="margin-left: 5px;">Aventura</label>
-                      </div>
-                      <div class="cadastrogenero">
+                    </div>
+                    <div class="cadastrogenero">
                         <input type="checkbox" id="comedia">
                         <label for="comedia" style="margin-left: 5px;">Comédia</label>
-                      </div>
-                      <div class="cadastrogenero">
+                    </div>
+                    <div class="cadastrogenero">
                         <input type="checkbox" id="suspense">
                         <label for="suspense" style="margin-left: 5px;">Suspense</label>
-                      </div>
-                      <div class="cadastrogenero">
+                    </div>
+                    <div class="cadastrogenero">
                         <input type="checkbox" id="drama">
                         <label for="drama" style="margin-left: 5px;">Drama</label>
-                      </div>
-                      <div class="cadastrogenero">
+                    </div>
+                    <div class="cadastrogenero">
                         <input type="checkbox" id="romance">
                         <label for="romance" style="margin-left: 5px;">Romance</label>
-                      </div>
-                      <div class="cadastrogenero">
+                    </div>
+                    <div class="cadastrogenero">
                         <input type="checkbox" id="terror">
                         <label for="terror" style="margin-left: 5px;">Terror</label>
-                      </div>
-                      <div class="cadastrogenero">
+                    </div>
+                    <div class="cadastrogenero">
                         <input type="checkbox" id="animacao">
                         <label for="animacao" style="margin-left: 5px;">Animação</label>
-                      </div>
                     </div>
-                        
-                   </div>
-               
-              
+                </div>
 
-                <div class="botoescadastro">
-                     <a href="./index.html" > <button id="botaobonito"class="link1">Cancelar</button></a>
-               <input type="submit" value="Cadastrar" name="submit" id="botaobonito" class="link1" >
-            <input type="reset" value="Limpar" id="botaobonito" class="link1"> 
-        </div>
+            </div>
+
+            <div class="botoescadastro">
+                <a href="index.html">
+                    <button type="button" id="botaobonito" class="link1">Cancelar</button>
+                </a>
+                <input type="submit" value="Cadastrar" name="submit" class="link1" id="botaobonito">
+                <input type="reset" value="Limpar" class="link1" id="botaobonito">
+            </div>
         </form>
-        
     </main>
 
-
     <footer>
-    
+
         <div id="programadores">
             <h2>Grindhouse®</h2>
-            <p>por <a href="https://www.instagram.com/juliaffg_/" class="link1" target="_blank" >Julia Figueredo </a>e <a href=" https://www.instagram.com/pedro_hrtavares/" target="_blank" class="link1">Pedro Tavares</a></p>
+            <p>por <a href="https://www.instagram.com/juliaffg_/" class="link1" target="_blank">Julia Figueredo </a>e <a
+                    href=" https://www.instagram.com/pedro_hrtavares/" target="_blank" class="link1">Pedro Tavares</a>
+            </p>
             <p>IFSULDEMINAS 2024</p>
         </div>
         <div>
             <div id="paginas">
                 <div>
                     <ul>
-                        <li><h5><a href="./contato.html" class="link1">Contato</a></h5></li>
-                        <li><h5><a href="./cadastro.html" class="link1">Cadastro</a></h5></li>
-                        <li><h5><a href="./sobre.html" class="link1">Sobre</a></h5></li>
+                        <li>
+                            <h5><a href="./contato.html" class="link1">Contato</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href="./cadastro.html" class="link1">Cadastro</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href="./sobre.html" class="link1">Sobre</a></h5>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li><h5><a href="./catalogo.html" class="link1">Catálogo</a></h5></li>
-                        <li><h5><a href="./generos.html" class="link1">Gêneros</a></h5></li>
+                        <li>
+                            <h5><a href="./catalogo.html" class="link1">Catálogo</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href="./generos.html" class="link1">Gêneros</a></h5>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -178,9 +190,10 @@
 
             </div>
         </div>
-        
-        
+
+
     </footer>
-    
+
 </body>
+
 </html>
